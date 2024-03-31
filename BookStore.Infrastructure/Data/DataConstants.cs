@@ -12,5 +12,8 @@
 
         public const int MinOrderQuantity = 1;
         public const int MaxOrderQuantity = 100;
+
+        public const int MinAuthorNameLength = 2;
+        public const int MaxAuthorNameLength = 25;
     }
 }

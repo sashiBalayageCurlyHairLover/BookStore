@@ -1,0 +1,27 @@
+﻿@using BookStore.Core.Models
+@model List<BookViewModel>
+@{
+    ViewBag.Title = "All available books";
+}
+
+<div class="text-center">
+    <h1>All books available</h1>
+    @if (Model.Count > 0)
+    {
+        @foreach (var item in Model)
+        {
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Title</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">@item.ISBN</h6>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">@item.Price</h6>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">@item.AuthorName</h6>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <p>No available books so far!</p>
+    }
+</div>

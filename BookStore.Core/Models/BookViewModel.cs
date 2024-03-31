@@ -19,5 +19,9 @@ namespace BookStore.Core.Models
         [Required]
         [Range(MinBookPrice, MaxBookPrice)]
         public double Price { get; set; }
+
+        [Required]
+        [StringLength(MaxAuthorNameLength, MinimumLength = MinAuthorNameLength)]
+        public string AuthorName { get; set; } = string.Empty;
     }
 }
