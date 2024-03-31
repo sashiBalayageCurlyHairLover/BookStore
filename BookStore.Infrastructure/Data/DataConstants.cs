@@ -9,5 +9,8 @@
 
         public const double MinBookPrice = 0.01;
         public const double MaxBookPrice = 100;
+
+        public const int MinOrderQuantity = 1;
+        public const int MaxOrderQuantity = 100;
     }
 }
